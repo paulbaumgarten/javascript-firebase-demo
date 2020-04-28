@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <style>
+            /* Styling the photo element*/
+            img#profilePic {
+                position: absolute; /* Force location on page */
+                top: 0;             /* At top of page */
+                right: 0;           /* At right of page */
+                width: 150px;       /* Force size to 150px */
+                height: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="section">
+            <div class="container">
+                <h1 class="title" id="welcome">
+                    Welcome!
+                </h1>
+                <p class="subtitle">
+                    Thanks for logging in.
+                </p>
+                <img src="" id="profilePic">
+                <button class="button is-primary" id="logout" onclick="logout();">Logout</button>
+            </div>
+        </section>
+    </body>
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>    
+    <script>
+    // TODO: INSERT Your web app's Firebase configuration here...............
+
+
+
+
+    
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="index.js"></script>
+</html>
