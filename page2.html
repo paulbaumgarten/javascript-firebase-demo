@@ -25,7 +25,39 @@
                     Thanks for logging in.
                 </p>
                 <img src="" id="profilePic">
-                <button class="button is-primary" id="logout" onclick="logout();">Logout</button>
+                <div class="field">
+                    <label class="label">Label</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Text input">
+                    </div>
+                    <p class="help">This is a help text</p>
+                </div>
+                <div class="field">
+                    <label class="label">Label</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Text input">
+                    </div>
+                    <p class="help">This is a help text</p>
+                </div>
+                <div class="field">
+                    <label class="label">Label</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Text input">
+                    </div>
+                    <p class="help">This is a help text</p>
+                </div>
+                <div class="field">
+                    <label class="label">Life story</label>
+                    <div class="control">
+                        <textarea class="textarea" placeholder=""></textarea>
+                    </div>
+                </div>
+                <div class="control">
+                    <button class="button is-primary" onclick="update();">Update</button>
+                </div>
+                <div class="control">
+                    <button class="button" id="logout" onclick="logout();">Logout</button>
+                </div>
             </div>
         </section>
     </body>
@@ -34,15 +66,9 @@
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>    
     <script>
-    // TODO: INSERT Your web app's Firebase configuration here...............
-
-
-
-
-    
+    // Your web app's Firebase configuration
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     </script>
-
-    <script src="index.js"></script>
+    <script src="page2.js"></script>
 </html>
