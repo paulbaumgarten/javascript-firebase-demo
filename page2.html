@@ -26,31 +26,32 @@
                 </p>
                 <img src="" id="profilePic">
                 <div class="field">
-                    <label class="label">Label</label>
+                    <label class="label">Home town</label>
                     <div class="control">
-                        <input class="input" type="text" placeholder="Text input">
+                        <input name="hometown" class="input" type="text" placeholder="Text input">
                     </div>
-                    <p class="help">This is a help text</p>
+                    <p class="help">Where do you consider home?</p>
                 </div>
                 <div class="field">
-                    <label class="label">Label</label>
+                    <label class="label">Who would love to share a meal with, dead or alive?</label>
                     <div class="control">
-                        <input class="input" type="text" placeholder="Text input">
+                        <input name="dinnerguest" class="input" type="text" placeholder="Text input">
                     </div>
-                    <p class="help">This is a help text</p>
+                    <p class="help">Of anyone who has ever lived</p>
                 </div>
                 <div class="field">
-                    <label class="label">Label</label>
+                    <label class="label">If you could pick what year to be born (past, present, future), when would you choose?</label>
                     <div class="control">
-                        <input class="input" type="text" placeholder="Text input">
+                        <input name="yeartobeborn" class="input" type="text" placeholder="Text input">
                     </div>
-                    <p class="help">This is a help text</p>
+                    <p class="help">Old fashioned or future tech?</p>
                 </div>
                 <div class="field">
                     <label class="label">Life story</label>
                     <div class="control">
-                        <textarea class="textarea" placeholder=""></textarea>
+                        <textarea name="bio" class="textarea" placeholder=""></textarea>
                     </div>
+                    <p class="help">It's a bit deep isn't it?</p>
                 </div>
                 <div class="control">
                     <button class="button is-primary" onclick="update();">Update</button>
@@ -67,7 +68,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>    
     <script>
     // Your web app's Firebase configuration
-    // Initialize Firebase
+      // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     </script>
     <script src="page2.js"></script>
